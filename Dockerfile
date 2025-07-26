@@ -15,9 +15,6 @@ RUN     apt-get update && \
         apt-get clean && \
         rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-# Enable Apache modules for security headers
-RUN     a2enmod headers rewrite
-
 # Copy application files
 COPY    backend-php/ /var/www/html/
 COPY    frontend/ /var/www/html/
