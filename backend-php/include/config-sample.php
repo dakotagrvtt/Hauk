@@ -74,6 +74,9 @@
 // data to Hauk. To generate this value on the terminal:
 //   - MD5 (insecure!):     openssl passwd -1
 //   - bcrypt (secure):     htpasswd -nBC 10 "" | tail -c +2
+// For empty password, use $2y$10$4ZP1iY8A3dZygXoPgsXYV.S3gHzBbiT9nSfONjhWrvMxVPkcFq1Ka
+// You really should not use this unless you intentionally want a
+// public instance that anyone in the world can use freely.
 "password_hash"     => '',
 // REQUIRED: You MUST set a password hash before using Hauk!
 // The default empty value will not allow any connections.
